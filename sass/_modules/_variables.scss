@@ -1,0 +1,38 @@
+//--------------------------------------------------
+// Media Query
+//--------------------------------------------------
+$lg-width: 1560px;
+$md-width: 1199px;
+$sm-width: 991px;
+$xs-width: 767px;
+$xxs-width: 575px;
+
+@mixin lg {
+  @media (max-width: #{$lg-width}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: #{$md-width}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: #{$sm-width}) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (max-width: #{$xs-width}) {
+    @content;
+  }
+}
+ 
+@mixin xxs {
+  @media (max-width: #{$xxs-width}) {
+    @content;
+  }
+}
